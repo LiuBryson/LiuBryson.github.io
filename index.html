@@ -260,7 +260,7 @@
         
         function getComments() {
             document.getElementById("loading").style.display = "field";
-            fetch('comment.php?mode=getComments')
+            fetch(baseURL + 'comment.php?mode=getComments')
               .then(response => response.json())
               .then(data => {
                 // 清空commentList元素
